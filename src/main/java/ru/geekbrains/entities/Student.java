@@ -20,6 +20,11 @@ public class Student {
     public Student() {
     }
 
+    public Student(String name, int mark) {
+        this.name = name;
+        this.mark = mark;
+    }
+
     public Long getId() {
         return id;
     }
@@ -30,6 +35,18 @@ public class Student {
 
     public int getMark() {
         return mark;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMark(int mark) {
+        this.mark = mark;
     }
 
     @Override
